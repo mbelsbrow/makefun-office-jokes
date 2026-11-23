@@ -10,6 +10,8 @@
 // heard, the PIP is the wince), tight wording, and freshness (the
 // inheritance angle, not a Monday morning or photocopier line).
 
+// Tie-break: the shorter the text, the better — this line is 110 characters.
+
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const MAX_CHARS = 199;
@@ -18,7 +20,7 @@ const SETUP = "My boss said 'we're a family here,' so I asked for my inheritance
 const PUNCHLINE = "now I'm on a performance improvement plan.";
 
 function buildLine(): string {
-  return SETUP + " " + "—" + " " + PUNCHLINE;
+  return `${SETUP} — ${PUNCHLINE}`;
 }
 
 const line = buildLine();
